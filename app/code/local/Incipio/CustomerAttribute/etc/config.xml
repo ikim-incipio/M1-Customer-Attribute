@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Incipio_CustomerAttribute>
+			<version>1.0.0</version>
+		</Incipio_CustomerAttribute>
+	</modules>
+	<global>
+		<blocks>
+			<customerattribute>
+				<class>Incipio_CustomerAttribute_Block</class>
+			</customerattribute>
+		</blocks>
+		<helpers>
+			<customerattribute>
+				<class>Incipio_CustomerAttribute_Helper</class>
+			</customerattribute>
+		</helpers>
+		<models>
+			<customerattribute>
+				<class>Incipio_CustomerAttribute_Model</class>
+				<resourceModel>customerattribute_resource</resourceModel>
+			</customerattribute>
+			<customerattribute_resource>
+				<class>Incipio_CustomerAttribute_Model_Resource</class>
+			</customerattribute_resource>
+		</models>
+		<resources>
+			<customerattribute_setup>
+				<setup>
+					<module>Incipio_CustomerAttribute</module>
+					<class>Mage_Customer_Model_Entity_Setup</class>
+				</setup>
+			</customerattribute_setup>
+		</resources>
+	</global>
+</config>
